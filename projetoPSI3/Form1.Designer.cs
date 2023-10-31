@@ -36,6 +36,10 @@
             this.btnequipa1 = new System.Windows.Forms.Button();
             this.btnequipa2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dinheirot = new System.Windows.Forms.Label();
+            this.dinheiro = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Titulo1
@@ -62,7 +66,7 @@
             // btnjogo2
             // 
             this.btnjogo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjogo2.Location = new System.Drawing.Point(12, 417);
+            this.btnjogo2.Location = new System.Drawing.Point(12, 367);
             this.btnjogo2.Name = "btnjogo2";
             this.btnjogo2.Size = new System.Drawing.Size(760, 37);
             this.btnjogo2.TabIndex = 2;
@@ -82,7 +86,7 @@
             // btnequipa1
             // 
             this.btnequipa1.Image = ((System.Drawing.Image)(resources.GetObject("btnequipa1.Image")));
-            this.btnequipa1.Location = new System.Drawing.Point(137, 147);
+            this.btnequipa1.Location = new System.Drawing.Point(53, 147);
             this.btnequipa1.Name = "btnequipa1";
             this.btnequipa1.Size = new System.Drawing.Size(182, 182);
             this.btnequipa1.TabIndex = 4;
@@ -91,7 +95,7 @@
             // btnequipa2
             // 
             this.btnequipa2.Image = ((System.Drawing.Image)(resources.GetObject("btnequipa2.Image")));
-            this.btnequipa2.Location = new System.Drawing.Point(457, 147);
+            this.btnequipa2.Location = new System.Drawing.Point(535, 147);
             this.btnequipa2.Name = "btnequipa2";
             this.btnequipa2.Size = new System.Drawing.Size(182, 182);
             this.btnequipa2.TabIndex = 5;
@@ -107,11 +111,42 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "VS";
             // 
+            // dinheirot
+            // 
+            this.dinheirot.AutoSize = true;
+            this.dinheirot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dinheirot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dinheirot.Location = new System.Drawing.Point(689, 18);
+            this.dinheirot.Name = "dinheirot";
+            this.dinheirot.Size = new System.Drawing.Size(40, 24);
+            this.dinheirot.TabIndex = 7;
+            this.dinheirot.Text = "100";
+            // 
+            // dinheiro
+            // 
+            this.dinheiro.AutoSize = true;
+            this.dinheiro.Location = new System.Drawing.Point(694, 54);
+            this.dinheiro.Name = "dinheiro";
+            this.dinheiro.Size = new System.Drawing.Size(35, 13);
+            this.dinheiro.TabIndex = 8;
+            this.dinheiro.Text = "label3";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(645, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 24);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 715);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dinheiro);
+            this.Controls.Add(this.dinheirot);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnequipa2);
             this.Controls.Add(this.btnequipa1);
@@ -122,6 +157,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +172,9 @@
         private System.Windows.Forms.Button btnequipa1;
         private System.Windows.Forms.Button btnequipa2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label dinheirot;
+        private System.Windows.Forms.Label dinheiro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
